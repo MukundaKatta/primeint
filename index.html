@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimeInt — Nail your next interview.</title>
+<meta name="description" content="AI-powered mock interviews that feel real. Role-specific questions. Feedback that actually helps you improve.">
+<meta property="og:title" content="PrimeInt — Nail your next interview.">
+<meta property="og:description" content="AI-powered mock interviews that feel real. Role-specific questions. Feedback that actually helps you improve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .hero-grad {
+    background: radial-gradient(ellipse at top, var(--tw-gradient-from) 0%, transparent 70%);
+  }
+</style>
+</head>
+<body class="bg-white text-neutral-900 min-h-screen antialiased">
+
+<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+  <a href="/" class="flex items-center gap-2 text-lg font-bold tracking-tight">
+    <span class="inline-block h-2.5 w-2.5 rounded-full bg-amber-500"></span>
+    PrimeInt
+  </a>
+  <a href="#waitlist" class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-neutral-700">
+    Get early access
+  </a>
+</nav>
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-x-0 top-0 -z-10 h-[500px] bg-gradient-to-b from-amber-100 via-amber-50 to-transparent opacity-60"></div>
+  <div class="mx-auto max-w-4xl px-6 pt-20 pb-24 text-center sm:pt-28">
+    <p class="mb-5 inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-700">
+      Career
+    </p>
+    <h1 class="text-5xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-7xl">
+      Nail your next interview.
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
+      AI-powered mock interviews that feel real. Role-specific questions. Feedback that actually helps you improve.
+    </p>
+    <form id="waitlist" class="mt-12 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+      <input
+        type="email"
+        placeholder="you@email.com"
+        required
+        class="w-full rounded-full border border-neutral-300 bg-white px-5 py-3.5 text-base placeholder-neutral-400 focus:border-neutral-900 focus:outline-none focus:ring-4 focus:ring-neutral-900/10 sm:w-80"
+      />
+      <button
+        type="submit"
+        class="rounded-full bg-neutral-900 px-7 py-3.5 font-medium text-white transition hover:bg-neutral-700"
+      >
+        Join the waitlist
+      </button>
+    </form>
+    <p id="thanks" class="mt-4 hidden text-sm font-medium text-amber-700">
+      Thanks. We will ping you the day we launch.
+    </p>
+  </div>
+</section>
+
+<section class="border-y border-neutral-200 bg-neutral-50 py-24">
+  <div class="mx-auto grid max-w-6xl gap-12 px-6 sm:grid-cols-3">
+    
+      <div>
+        <div class="text-3xl">🤖</div>
+        <h3 class="mt-4 text-lg font-semibold tracking-tight">Live mock interviews</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Voice-based interviews tailored to the exact role and company you are applying for.</p>
+      </div>
+      <div>
+        <div class="text-3xl">📊</div>
+        <h3 class="mt-4 text-lg font-semibold tracking-tight">Detailed scoring</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Clarity, structure, depth. See exactly where to tighten your answers.</p>
+      </div>
+      <div>
+        <div class="text-3xl">🎯</div>
+        <h3 class="mt-4 text-lg font-semibold tracking-tight">Behavioral and technical</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">From STAR-format stories to system design walkthroughs, all in one place.</p>
+      </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-4xl px-6 py-28 text-center">
+  <h2 class="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+    Sound like something you need?
+  </h2>
+  <p class="mx-auto mt-3 max-w-xl text-neutral-600">
+    Leave your email above. We will be in touch the moment we are ready to show you around.
+  </p>
+  <a
+    href="#waitlist"
+    class="mt-8 inline-block rounded-full bg-amber-600 px-7 py-3.5 font-medium text-white transition hover:bg-amber-700"
+  >
+    Reserve my spot
+  </a>
+</section>
+
+<footer class="border-t border-neutral-200">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-8 text-sm text-neutral-500">
+    <p class="flex items-center gap-2">
+      <span class="inline-block h-2 w-2 rounded-full bg-amber-500"></span>
+      PrimeInt
+    </p>
+    <p>© 2026</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('waitlist').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('thanks').classList.remove('hidden');
+  });
+</script>
+
+</body>
+</html>
